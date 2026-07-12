@@ -1,867 +1,324 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>علی محجوب | توسعه دهنده اندروید</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap"
-          rel="stylesheet">
-
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
 </head>
 
 <body>
+    <!-- ====== Preloader ====== -->
     <div class="loader">
-
-    <div class="loader-logo">
-
-        AM
-
+        <div class="loader-logo">AM</div>
     </div>
 
-</div>
+    <!-- ====== Custom Cursor ====== -->
     <div class="cursor"></div>
 
-<div class="background">
+    <!-- ====== Background Blobs ====== -->
+    <div class="background">
+        <span class="blob one"></span>
+        <span class="blob two"></span>
+        <span class="blob three"></span>
+    </div>
 
-    <span class="blob one"></span>
-
-    <span class="blob two"></span>
-
-    <span class="blob three"></span>
-
-</div>
-<header class="header">
-
-    <nav class="navbar container">
-
-        <a href="#" class="logo">
-
-            <span class="logo-circle"></span>
-
-            <span class="logo-text">Ali Mahjoob</span>
-
-        </a>
-
-        <ul class="nav-links">
-
-            <li><a href="#home">خانه</a></li>
-
-            <li><a href="#about">درباره من</a></li>
-
-            <li><a href="#skills">مهارت‌ها</a></li>
-
-            <li><a href="#projects">پروژه‌ها</a></li>
-
-            <li><a href="#contact">تماس</a></li>
-
-        </ul>
-        <button class="menu-btn">
-
-    <span></span>
-
-    <span></span>
-
-    <span></span>
-
-</button>
-
-        <a href="/assets/resume/resume.pdf" class="resume-btn">
-
-            رزومه
-
-        </a>
-
-    </nav>
-
-</header>
-
-<section id="home" class="hero">
-
-    <div class="hero-left">
-
-        <span class="badge">
-
-            Android Developer
-        </span>
-
-        <h1>
-
-            سلام 
-
-            <br>
-
-           <p>
-
-من
-
-<span id="role"></span>
-
-هستم
-
-</p>
-
-          <span id="typing">
-
-</span>
-
-            هستم
-
-        </h1>
-
-        <p>
-
-            توسعه‌دهنده اندروید با بیش از ۵ سال تجربه
-            در طراحی اپلیکیشن‌های Native Android
-            با Kotlin، Jetpack Compose و معماری Clean.
-
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="#projects" class="primary">
-
-                مشاهده نمونه کارها
-
+    <!-- ====== Header / Navbar ====== -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">
+                <span class="logo-circle"></span>
+                <span class="logo-text">Ali Mahjoob</span>
             </a>
 
-            <a href="#contact" class="secondary">
-
-                تماس با من
-
-            </a>
-
-        </div>
-
-    </div>
-
-    <div class="hero-right">
-
-        <div class="profile-card">
-
-            <div class="circle"></div>
-
-            <img
-                    src="assets/images/profile.png"
-                    alt="Ali">
-
-        </div>
-
-    </div>
-
-</section>
-
-<section id="about" class="about">
-
-    <div class="section-title">
-
-        <span>درباره من</span>
-
-        <h2>
-            چرا من؟
-        </h2>
-
-    </div>
-
-    <div class="about-container">
-
-        <div class="about-card">
-
-            <div class="glass-light"></div>
-
-            <h3>
-
-                سلام 👋
-
-            </h3>
-
-            <p>
-
-                من علی محجوب هستم.
-
-                توسعه‌دهنده اندروید با بیش از ۵ سال تجربه در توسعه
-                اپلیکیشن‌های Native Android.
-
-            </p>
-
-            <p>
-
-                تمرکز اصلی من روی طراحی اپلیکیشن‌های سریع،
-                معماری تمیز،
-                رابط کاربری مدرن و تجربه کاربری حرفه‌ای است.
-
-            </p>
-
-            <p>
-
-                بیشتر پروژه‌هایم با Kotlin و Jetpack Compose
-                توسعه داده شده‌اند.
-
-            </p>
-            <div class="tech-stack">
-
-    <span>Kotlin</span>
-
-    <span>Compose</span>
-
-    <span>Material 3</span>
-
-    <span>MVVM</span>
-
-    <span>Clean</span>
-
-    <span>Retrofit</span>
-
-    <span>Ktor</span>
-
-    <span>Room</span>
-
-    <span>Coroutines</span>
-
-    <span>Flow</span>
-
-    <span>Koin</span>
-
-    <span>Firebase</span>
-
-</div>
-
-        </div>
-
-        <div class="about-info">
-
-            <div class="info-box">
-
-                <h1>
-
-                    ۵+
-
-                </h1>
-
-                <span>
-
-                    سال تجربه
-
-                </span>
-
-            </div>
-
-            <div class="info-box">
-
-                <h1>
-
-                    ۳۰+
-
-                </h1>
-
-                <span>
-
-                    پروژه
-
-                </span>
-
-            </div>
-
-            <div class="info-box">
-
-                <h1>
-
-                    ۱۰+
-
-                </h1>
-
-                <span>
-
-                    تکنولوژی
-
-                </span>
-
-            </div>
-
-            <div class="info-box">
-
-                <h1>
-
-                    ۱۰۰K+
-
-                </h1>
-
-                <span>
-
-                    خط کد
-
-                </span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<section id="experience" class="experience">
-
-
-    <div class="section-title">
-
-        <span>تجربه</span>
-
-        <h2>
-            مسیر حرفه‌ای من
-        </h2>
-
-    </div>
-
-
-
-    <div class="timeline">
-
-
-
-        <div class="timeline-item">
-
-
-            <div class="timeline-dot"></div>
-
-
-            <div class="timeline-card">
-
-
-                <span class="timeline-year">
-
-                    2021
-
-                </span>
-
-
-                <h3>
-
-                    Android Developer
-
-                </h3>
-
-
-                <p>
-
-                    توسعه اپلیکیشن‌های Native Android
-                    با Kotlin و معماری MVVM
-
-                </p>
-
-
-                <div class="timeline-tags">
-
-
-                    <span>Kotlin</span>
-
-                    <span>MVVM</span>
-
-                    <span>Retrofit</span>
-
-
-                </div>
-
-
-            </div>
-
-
-        </div>
-
-
-
-
-
-        <div class="timeline-item">
-
-
-            <div class="timeline-dot"></div>
-
-
-            <div class="timeline-card">
-
-
-                <span class="timeline-year">
-
-                    2023
-
-                </span>
-
-
-                <h3>
-
-                    Jetpack Compose Developer
-
-                </h3>
-
-
-                <p>
-
-                    طراحی رابط‌های مدرن با Compose
-                    و Material 3
-
-                </p>
-
-
-                <div class="timeline-tags">
-
-
-                    <span>Compose</span>
-
-                    <span>Material 3</span>
-
-                    <span>Animation</span>
-
-
-                </div>
-
-
-            </div>
-
-
-        </div>
-
-
-
-
-
-        <div class="timeline-item">
-
-
-            <div class="timeline-dot"></div>
-
-
-            <div class="timeline-card">
-
-
-                <span class="timeline-year">
-
-                    2026
-
-                </span>
-
-
-                <h3>
-
-                    Modern Android Stack
-
-                </h3>
-
-
-                <p>
-
-                    توسعه پروژه‌های حرفه‌ای با
-                    Clean Architecture و ابزارهای مدرن
-
-                </p>
-
-
-                <div class="timeline-tags">
-
-
-                    <span>Ktor</span>
-
-                    <span>Room</span>
-
-                    <span>Koin</span>
-
-
-                </div>
-
-
-            </div>
-
-
-        </div>
-
-
-    </div>
-
-
-</section>
-<section id="skills" class="skills">
-
-    <div class="section-title">
-
-        <span>مهارت‌ها</span>
-
-        <h2>
-
-            ابزارهایی که هر روز با آن‌ها کار می‌کنم
-
-        </h2>
-
-    </div>
-
-    <div class="skills-grid">
-
-        <div class="skill-card">
-
-            <img src="assets/icons/kotlin.svg">
-
-            <h3>Kotlin</h3>
-
-            <p>
-
-                توسعه Native Android
-
-            </p>
-
-        </div>
-
-        <div class="skill-card">
-
-            <img src="assets/icons/compose.svg">
-
-            <h3>Jetpack Compose</h3>
-
-            <p>
-
-                Declarative UI
-
-            </p>
-
-        </div>
-
-        <div class="skill-card">
-
-            <img src="assets/icons/android.svg">
-
-            <h3>Android</h3>
-
-            <p>
-
-                SDK
-
-            </p>
-
-        </div>
-
-        <div class="skill-card">
-
-            <img src="assets/icons/retrofit.svg">
-
-            <h3>Retrofit</h3>
-
-            <p>
-
-                REST API
-
-            </p>
-
-        </div>
-
-        <div class="skill-card">
-
-            <img src="assets/icons/ktor.svg">
-
-            <h3>Ktor</h3>
-
-            <p>
-
-                Networking
-
-            </p>
-
-        </div>
-
-        <div class="skill-card">
-
-            <img src="assets/icons/room.svg">
-
-            <h3>Room</h3>
-
-            <p>
-
-                Local Database
-
-            </p>
-
-        </div>
-
-        <div class="skill-card">
-
-            <img src="assets/icons/git.svg">
-
-            <h3>Git</h3>
-
-            <p>
-
-                Version Control
-
-            </p>
-
-        </div>
-
-        <div class="skill-card">
-
-            <img src="assets/icons/firebase.svg">
-
-            <h3>Firebase</h3>
-
-            <p>
-
-                Cloud Services
-
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-<section id="projects" class="projects">
-
-    <div class="section-title">
-
-        <span>نمونه کارها</span>
-
-        <h2>
-            پروژه‌های من
-        </h2>
-
-        <p>
-            برخی از پروژه‌هایی که با Kotlin و Android توسعه داده‌ام
-        </p>
-
-    </div>
-
-
-    <div class="projects-grid" id="projects-container">
-
-        <!-- پروژه ها از GitHub می آیند -->
-
-    </div>
-
-
-</section>
-<template id="project-template">
-
-<div class="project-card">
-
-
-<div class="project-image">
-
-<img 
-class="project-img"
-src="assets/images/project-default.png">
-
-</div>
-
-
-
-<div class="project-content">
-
-
-<div class="project-header">
-
-
-<h3 class="project-name"></h3>
-
-
-<span class="project-lang"></span>
-
-
-</div>
-
-
-
-<p class="project-desc"></p>
-
-
-
-<div class="project-meta">
-
-
-<span class="stars">
-⭐ 0
-</span>
-
-
-<span class="fork">
-🍴 0
-</span>
-
-
-</div>
-
-
-
-<a 
-class="github-link"
-target="_blank">
-
-مشاهده GitHub
-
-</a>
-
-
-</div>
-
-
-</div>
-
-</template>
-<section id="contact" class="contact">
-
-
-    <div class="section-title">
-
-
-        <span>
-            تماس
-        </span>
-
-
-        <h2>
-            ارتباط با من
-        </h2>
-
-
-        <p>
-            برای همکاری، پروژه یا فرصت‌های شغلی می‌توانید با من در ارتباط باشید.
-        </p>
-
-
-    </div>
-
-
-
-    <div class="contact-container">
-
-
-
-        <div class="contact-info">
-
-
-            <div class="contact-card">
-
-
-                <span class="icon">
-                    💻
-                </span>
-
-
-                <h3>
-                    GitHub
-                </h3>
-
-
-                <a href="https://github.com/behnamUix"
-                target="_blank">
-
-                    github.com/behnamUix
-
-                </a>
-
-
-            </div>
-
-
-
-            <div class="contact-card">
-
-
-                <span class="icon">
-                    💼
-                </span>
-
-
-                <h3>
-                    LinkedIn
-                </h3>
-
-
-                <a href="#">
-
-                    LinkedIn Profile
-
-                </a>
-
-
-            </div>
-
-
-
-            <div class="contact-card">
-
-
-                <span class="icon">
-                    ✉️
-                </span>
-
-
-                <h3>
-                    Email
-                </h3>
-
-
-                <a href="mailto:yourmail@gmail.com">
-
-                    Email Me
-
-                </a>
-
-
-            </div>
-
-
-        </div>
-
-
-
-
-
-        <form class="contact-form">
-
-
-            <input
-            type="text"
-            placeholder="نام شما">
-
-
-
-            <input
-            type="email"
-            placeholder="ایمیل">
-
-
-
-            <textarea
-            placeholder="پیام شما"></textarea>
-
-
-
-            <button>
-
-                ارسال پیام 🚀
-
+            <ul class="nav-links">
+                <li><a href="#home">خانه</a></li>
+                <li><a href="#about">درباره من</a></li>
+                <li><a href="#skills">مهارت‌ها</a></li>
+                <li><a href="#projects">پروژه‌ها</a></li>
+                <li><a href="#contact">تماس</a></li>
+            </ul>
+
+            <button class="menu-btn" aria-label="منو">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
 
+            <a href="/assets/resume/resume.pdf" class="resume-btn" download>رزومه</a>
+        </nav>
+    </header>
 
-        </form>
+    <!-- ====== Hero Section ====== -->
+    <section id="home" class="hero">
+        <div class="hero-left">
+            <span class="badge">Android Developer</span>
 
+            <h1>
+                سلام <br />
+                من <span id="typing"></span> هستم
+            </h1>
 
+            <p>
+                توسعه‌دهنده اندروید با بیش از 3 سال تجربه
+                در طراحی اپلیکیشن‌های Native Android
+                با Kotlin، Jetpack Compose و معماری Clean.
+            </p>
 
-    </div>
+            <div class="hero-buttons">
+                <a href="#projects" class="primary">مشاهده نمونه کارها</a>
+                <a href="#contact" class="secondary">تماس با من</a>
+            </div>
+        </div>
 
+        <div class="hero-right">
+            <div class="profile-card">
+                <div class="circle"></div>
+                <img src="assets/images/profile.png" alt="علی محجوب" />
+            </div>
+        </div>
+    </section>
 
-</section>
-<script src="js/app.js"></script>
-<script src="js/github.js"></script>
+    <!-- ====== About Section ====== -->
+    <section id="about" class="about">
+        <div class="section-title">
+            <span>درباره من</span>
+            <h2>چرا من؟</h2>
+        </div>
 
+        <div class="about-container">
+            <div class="about-card">
+                <div class="glass-light"></div>
+                <h3>سلام 👋</h3>
+                <p>
+                    من علی محجوب هستم. توسعه‌دهنده اندروید با بیش از 3 سال تجربه
+                    در توسعه اپلیکیشن‌های Native Android.
+                </p>
+                <p>
+                    تمرکز اصلی من روی طراحی اپلیکیشن‌های سریع، معماری تمیز،
+                    رابط کاربری مدرن و تجربه کاربری حرفه‌ای است.
+                </p>
+                <p>بیشتر پروژه‌هایم با Kotlin و Jetpack Compose توسعه داده شده‌اند.</p>
+
+                <div class="tech-stack">
+                    <span>Kotlin</span>
+                    <span>Compose</span>
+                    <span>Material 3</span>
+                    <span>MVVM</span>
+                    <span>Clean</span>
+                    <span>Retrofit</span>
+                    <span>Ktor</span>
+                    <span>Room</span>
+                    <span>Coroutines</span>
+                    <span>Flow</span>
+                    <span>Koin</span>
+                    <span>Firebase</span>
+                </div>
+            </div>
+
+            <div class="about-info">
+                <div class="info-box">
+                    <h1>3+</h1>
+                    <span>سال تجربه</span>
+                </div>
+                <div class="info-box">
+                    <h1>۳۰+</h1>
+                    <span>پروژه</span>
+                </div>
+                <div class="info-box">
+                    <h1>۱۰+</h1>
+                    <span>تکنولوژی</span>
+                </div>
+                <div class="info-box">
+                    <h1>۱۰۰K+</h1>
+                    <span>خط کد</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== Experience Section ====== -->
+    <section id="experience" class="experience">
+        <div class="section-title">
+            <span>تجربه</span>
+            <h2>مسیر حرفه‌ای من</h2>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-year">۱۴۰۰</span>
+                    <h3>Android Developer</h3>
+                    <p>توسعه اپلیکیشن‌های Native Android با Kotlin و معماری MVVM</p>
+                    <div class="timeline-tags">
+                        <span>Kotlin</span>
+                        <span>MVVM</span>
+                        <span>Retrofit</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-year">۱۴۰۲</span>
+                    <h3>Jetpack Compose Developer</h3>
+                    <p>طراحی رابط‌های مدرن با Compose و Material 3</p>
+                    <div class="timeline-tags">
+                        <span>Compose</span>
+                        <span>Material 3</span>
+                        <span>Animation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-year">۱۴۰۵</span>
+                    <h3>Modern Android Stack</h3>
+                    <p>توسعه پروژه‌های حرفه‌ای با Clean Architecture و ابزارهای مدرن</p>
+                    <div class="timeline-tags">
+                        <span>Ktor</span>
+                        <span>Room</span>
+                        <span>Koin</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== Skills Section ====== -->
+    <section id="skills" class="skills">
+        <div class="section-title">
+            <span>مهارت‌ها</span>
+            <h2>ابزارهایی که هر روز با آن‌ها کار می‌کنم</h2>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="assets/icons/kotlin.svg" alt="Kotlin" />
+                <h3>Kotlin</h3>
+                <p>توسعه Native Android</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/icons/compose.svg" alt="Jetpack Compose" />
+                <h3>Jetpack Compose</h3>
+                <p>Declarative UI</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/icons/android.svg" alt="Android" />
+                <h3>Android</h3>
+                <p>SDK</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/icons/retrofit.svg" alt="Retrofit" />
+                <h3>Retrofit</h3>
+                <p>REST API</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/icons/ktor.svg" alt="Ktor" />
+                <h3>Ktor</h3>
+                <p>Networking</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/icons/room.svg" alt="Room" />
+                <h3>Room</h3>
+                <p>Local Database</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/icons/git.svg" alt="Git" />
+                <h3>Git</h3>
+                <p>Version Control</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/icons/firebase.svg" alt="Firebase" />
+                <h3>Firebase</h3>
+                <p>Cloud Services</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== Projects Section ====== -->
+    <section id="projects" class="projects">
+        <div class="section-title">
+            <span>نمونه کارها</span>
+            <h2>پروژه‌های من</h2>
+            <p>برخی از پروژه‌هایی که با Kotlin و Android توسعه داده‌ام</p>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
+            <!-- پروژه ها از GitHub می آیند -->
+        </div>
+    </section>
+
+    <!-- ====== Template for GitHub Projects ====== -->
+    <template id="project-template">
+        <div class="project-card">
+            <div class="project-image">
+                <img class="project-img" src="assets/images/project-default.png" alt="پروژه" />
+            </div>
+            <div class="project-content">
+                <div class="project-header">
+                    <h3 class="project-name"></h3>
+                    <span class="project-lang"></span>
+                </div>
+                <p class="project-desc"></p>
+                <div class="project-meta">
+                    <span class="stars">⭐ 0</span>
+                    <span class="fork">🍴 0</span>
+                </div>
+                <a class="github-link" target="_blank" rel="noopener noreferrer">مشاهده GitHub</a>
+            </div>
+        </div>
+    </template>
+
+    <!-- ====== Contact Section ====== -->
+    <section id="contact" class="contact">
+        <div class="section-title">
+            <span>تماس</span>
+            <h2>ارتباط با من</h2>
+            <p>برای همکاری، پروژه یا فرصت‌های شغلی می‌توانید با من در ارتباط باشید.</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <span class="icon">💻</span>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/behnamUix" target="_blank" rel="noopener noreferrer">
+                        github.com/behnamUix
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <span class="icon">💼</span>
+                    <h3>LinkedIn</h3>
+                    <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+                </div>
+
+                <div class="contact-card">
+                    <span class="icon">✉️</span>
+                    <h3>Email</h3>
+                    <a href="mailto:yourmail@gmail.com">Email Me</a>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <input type="text" placeholder="نام شما" required />
+                <input type="email" placeholder="ایمیل" required />
+                <textarea placeholder="پیام شما" required></textarea>
+                <button type="submit">ارسال پیام 🚀</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ====== Scripts ====== -->
+    <script src="js/app.js"></script>
+    <script src="js/github.js"></script>
 </body>
-
 </html>
