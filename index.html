@@ -13,13 +13,23 @@
       content="بازی جاسوسم | هیجان، حدس، خنده و رقابت با دوستان"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Estedad:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="icon" href="favicon.ico" />
 
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="stylesheet" href="assets/css/animation.css" />
+    <link rel="stylesheet" href="css/animation.css" />
 
-    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   </head>
 
   <body>
@@ -31,12 +41,6 @@
 
     <header>
       <nav class="navbar">
-        <div id="loader">
-          <div class="loaderLogo">
-            <img src="assets/images/logo/logo.png" />
-          </div>
-        </div>
-
         <ul class="menu">
           <li><a href="#home">خانه</a></li>
 
@@ -46,76 +50,97 @@
 
           <li><a href="#how">آموزش</a></li>
 
-          <li><a href="#download">دانلود</a></li>
+          <li><a href="">دانلود</a></li>
         </ul>
 
         <div class="downloadBtn">
-          <a href="#">دانلود</a>
+          <a
+            href="https://drive.google.com/file/d/1n9lsGPNqrJ1nmV5T6KUZ0OKIysme38ZA/view?usp=sharing"
+            >دانلود</a
+          >
         </div>
       </nav>
     </header>
 
     <section id="home" class="hero">
-      <div class="heroContent">
-        <span class="smallTitle"> بازی گروهی و دورهمی </span>
+      <div class="hero-grid">
+        <div class="hero-content reveal">
+          <span class="hero-tag">  بازی گروهی و دورهمی </span>
 
-        <h1>جاسوسم</h1>
+          <h1>جاسوسم</h1>
 
-        <h2>رازها را حفظ کن... یا جاسوس را پیدا کن!</h2>
+          <h2>آیا می‌توانی جاسوس را پیدا کنی؟</h2>
 
-        <p>
-          در هر دور بازی تنها یک نفر جاسوس است. همه کلمه را می‌دانند... به جز
-          او! آیا می‌توانی بدون لو رفتن کلمه را حدس بزنی؟
-        </p>
+          <div id="hero-desc">
+            <p>
+              در هر دور بازی، همه به جز یک نفر از کلمه مخفی خبر دارند. جاسوس
+              باید بدون لو رفتن کلمه را حدس بزند و بقیه نیز باید او را پیدا
+              کنند.
+            </p>
+          </div>
 
-        <div class="heroButtons">
-          <a href="#" class="market"> دانلود از بازار </a>
+          <div class="hero-buttons">
+            <a
+              href="https://myket.ir/app/com.behnamuix.spygame"
+              class="market neon-btn"
+            >
+              دانلود از مایکت
+            </a>
 
-          <a href="#" class="trailer"> مشاهده تریلر </a>
+            <a href="#" class="trailer"> مشاهده تریلر </a>
+          </div>
         </div>
-      </div>
 
-      <div class="heroImage">
-        <div class="phone">
-          <img src="assets/images/hero/hero-phone.png" />
+        <div class="hero-phone">
+          <div class="circle one"></div>
+
+          <div class="circle two"></div>
+
+          <div class="circle three"></div>
+
+          <img src="assets/images/hero/hero-phone.png" alt="SpyGame" />
+
+          <div class="floating-card top-left">🕵️ جاسوس</div>
+
+          <div class="floating-card top-right">🔐 کلمه مخفی</div>
+
+          <div class="floating-card bottom-left">🎯 حدس بزن</div>
+
+          <div class="floating-card bottom-right">👥 دورهمی</div>
         </div>
       </div>
     </section>
     <section class="statistics">
       <div class="card">
-        <h2>+100K</h2>
-
+        <h2 data-target="800">0</h2>
         <p>دانلود</p>
       </div>
 
       <div class="card">
-        <h2>4.9</h2>
-
+        <h2 data-target="3.5">0</h2>
         <p>امتیاز کاربران</p>
       </div>
 
       <div class="card">
-        <h2>+300</h2>
-
+        <h2 data-target="500">0</h2>
         <p>کلمات بازی</p>
       </div>
 
       <div class="card">
-        <h2>∞</h2>
-
+        <h2 data-target="9999">0</h2>
         <p>لحظات هیجان</p>
       </div>
     </section>
     <section id="features">
       <div class="sectionTitle">
-        <h2>چرا جاسوسم؟</h2>
+        <h2>چرا بازی جاسوسم؟</h2>
 
         <p>هیجان واقعی در دورهمی</p>
       </div>
 
       <div class="featuresGrid">
         <div class="feature">
-          <div class="icon">🕵️</div>
+<i class="fas fa-search icon"></i>
 
           <h3>پیدا کردن جاسوس</h3>
 
@@ -123,7 +148,7 @@
         </div>
 
         <div class="feature">
-          <div class="icon">🎲</div>
+<i class="fas fa-random icon"></i>
 
           <h3>دسته‌بندی متنوع</h3>
 
@@ -131,7 +156,7 @@
         </div>
 
         <div class="feature">
-          <div class="icon">🎨</div>
+<i class="fas fa-brush icon"></i>
 
           <h3>بک‌گراند سفارشی</h3>
 
@@ -139,13 +164,34 @@
         </div>
 
         <div class="feature">
-          <div class="icon">➕</div>
+<i class="fas fa-add icon"></i>
 
           <h3>افزودن کلمات</h3>
 
           <p>هرچقدر خواستی کلمه جدید اضافه کن.</p>
         </div>
       </div>
+            <div class="feature" style="    margin-top: 40px;
+    ">
+          <!-- آیکون‌های نقشه -->
+<i class="fas fa-map icon"></i>
+
+          <h3>پیدا کردن همبازی رو نقشه<span><h6 style="color: blueviolet;">( به زودی )</h6></span></h3>
+
+          <p>رو نقشه بهت همبازی هاتو نشون میده و برات میتینگ تنظیم میکنه  داخل نزدیک ترین پارک</p>
+        </div>
+      <div class="feature" style="    margin-top: 40px;
+    width: 48%;">
+          <!-- آیکون‌های نقشه -->
+<i class="fas fa-brain icon"></i>
+
+          <h3>مکانیک رندوم سازی قوی</h3>
+
+          <p>بعد از بار ها تست کردن به جزعت میتونم بگم بهترین الگوریتم رندوم سازی رو داره</p>
+        </div>
+        
+      </div>
+
     </section>
     <section id="screenshots">
       <div class="sectionTitle">
@@ -165,9 +211,7 @@
           <img src="assets/images/screenshots/screenshot3.png" />
         </div>
 
-        <div class="shot">
-          <img src="assets/images/screenshots/screenshot4.png" />
-        </div>
+
       </div>
     </section>
     <section id="how">
@@ -207,22 +251,56 @@
       <p>هیجان واقعی دورهمی‌ها را تجربه کن.</p>
 
       <div class="buttons">
-        <a href="#"> دانلود از بازار </a>
+        <a href="https://myket.ir/app/com.behnamuix.spygame">
+          دانلود از مایکت
+        </a>
 
-        <a href="#"> دانلود مستقیم </a>
+        <a
+          href="https://drive.google.com/file/d/1n9lsGPNqrJ1nmV5T6KUZ0OKIysme38ZA/view?usp=sharing"
+        >
+          دانلود مستقیم
+          <h6>نسخه 2.3.0</h4>
+        </a>
       </div>
     </section>
     <footer>
-      <img src="assets/images/logo/logo.png" />
-
+  <div class="footer-content">
+    <div class="footer-logo">
       <p>تمامی حقوق محفوظ است.</p>
-      <div class="topButton">↑</div>
-    </footer>
+    </div>
+    
+<div class="footer-social">
+    <span>ارتباط با من:</span>
+    
+    <!-- تلگرام -->
+    <a href="https://t.me/behnamUix" target="_blank" class="social-link telegram" aria-label="تلگرام">
+        <i class="fab fa-telegram-plane"></i>
+    </a>
+    
+    <!-- واتس‌اپ -->
+    <a href="https://wa.me/09307283313" target="_blank" class="social-link whatsapp" aria-label="واتس‌اپ">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- جیمیل -->
+    <a href="mailto:behnam.it77@gmail.com" target="_blank" class="social-link gmail" aria-label="جیمیل">
+        <i class="fas fa-envelope"></i>
+    </a>
+    
+    <!-- لینکدین -->
+    <a href="https://www.linkedin.com/in/behnamuix" target="_blank" class="social-link linkedin" aria-label="لینکدین">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+</div>
+  </div>
+  
+  <div class="topButton">↑</div>
+</footer>
 
-    <script src="assets/js/particles.js"></script>
+    <script src="js/particles.js"></script>
 
-    <script src="assets/js/animation.js"></script>
+    <script src="js/animation.js"></script>
 
-    <script src="assets/js/main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
