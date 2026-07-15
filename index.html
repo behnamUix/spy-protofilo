@@ -87,7 +87,7 @@
               دانلود از مایکت
             </a>
 
-            <a href="#" class="trailer"> مشاهده تریلر </a>
+            <a href="#tv-section" class="trailer"> مشاهده تریلر </a>
           </div>
         </div>
 
@@ -193,6 +193,64 @@
       </div>
 
     </section>
+     <!-- ======== سکشن تلویزیون LED ======== -->
+    <section class="tv-section" id="tv-section">
+
+        <h2 class="tv-section-title">
+            📺 <span>تلویزیون LED</span>
+        </h2>
+
+        <div class="tv-led">
+
+            <!-- صفحه نمایش -->
+            <div class="tv-led-screen">
+
+                <!-- LED Frame -->
+                <div class="led-frame"></div>
+
+                <!-- LED Dots (گوشه‌ها) -->
+                <div class="led-dot tl"></div>
+                <div class="led-dot tr"></div>
+                <div class="led-dot bl"></div>
+                <div class="led-dot br"></div>
+
+                <!-- ویدیو -->
+                <video id="tvVideo">
+                <source src="videos/spy.mp4" type="video/mp4">
+            </video>
+
+            </div>
+
+            <!-- پایه -->
+            <div class="tv-stand"></div>
+
+            <!-- LED Indicator -->
+            <div class="tv-led-indicator">
+                <div class="dot" id="indicator1"></div>
+                <div class="dot" id="indicator2"></div>
+                <div class="dot" id="indicator3"></div>
+            </div>
+
+            <!-- کنترل‌ها -->
+            <div class="tv-controls">
+                <button class="tv-btn play" id="playBtn">
+                    <i class="fas fa-play"></i> پخش
+                </button>
+                <button class="tv-btn" id="pauseBtn">
+                    <i class="fas fa-pause"></i> توقف
+                </button>
+                <button class="tv-btn" id="muteBtn">
+                    <i class="fas fa-volume-up"></i> صدا
+                </button>
+                <button class="tv-btn" id="resetBtn">
+                    <i class="fas fa-redo"></i> بازنشانی
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
     <section id="screenshots">
       <div class="sectionTitle">
         <h2>تصاویر بازی</h2>
@@ -300,6 +358,9 @@
     <script src="js/particles.js"></script>
 
     <script src="js/animation.js"></script>
+
+    
+    <script src="js/tv.js"></script>
 
     <script src="js/main.js"></script>
         <div class="modal-overlay" id="updateModal">
