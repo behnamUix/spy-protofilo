@@ -302,5 +302,103 @@
     <script src="js/animation.js"></script>
 
     <script src="js/main.js"></script>
+        <div class="modal-overlay" id="updateModal">
+        <div class="modal">
+
+            <!-- آیکون چرخان -->
+            <div class="icon-wrapper">
+                <div class="orbit"></div>
+                <div class="orbit2"></div>
+                <div class="icon-bg"></div>
+                <div class="icon-spinner">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+            </div>
+
+            <!-- متن -->
+            <h2>در حال <span>آپدیت</span> رابط کاربری</h2>
+            <p>...ما در حال بروزرسانی رابط کاربری بازی هستیم</p>
+
+            <!-- نوار پیشرفت -->
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+
+            <!-- دکمه‌ها -->
+           <div class="modal-actions">
+    <button class="btn-primary" onclick="closeModal()">
+        <i class="fas fa-check"></i> متوجه شدم
+    </button>
+    <button class="btn-secondary" onclick="toggleDetails()">
+        <i class="fas fa-info-circle"></i> جزئیات بیشتر
+    </button>
+</div>
+
+<!-- ======== جزییات بیشتر ======== -->
+<div class="details-content" id="detailsContent" style="display: none;">
+    <div class="divider"></div>
+    <ul class="details-list">
+        <li>
+            <span class="list-icon">🤖</span>
+            <div class="list-text">
+                <strong>هوش مصنوعی شخصی‌سازی‌شده</strong>
+                <p>به هوش مصنوعی بگو به چه موضوعی علاقه داری، خودش کلمات و سناریوهای مناسب رو می‌چینه و تجربه‌ای منحصربه‌فرد برات می‌سازه.</p>
+            </div>
+        </li>
+        <li>
+            <span class="list-icon">🗺️</span>
+            <div class="list-text">
+                <strong>همبازی‌های نزدیک</strong>
+                <p>همبازی‌ها رو روی نقشه بهت نشون میده و نزدیک‌ترین پارک یا مکان مناسب برای ملاقات رو پیدا می‌کنه تا بتونی با بقیه بازی کنی.</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    </div>
+     <script>
+        // بستن مودال با کلیک روی دکمه
+        function closeModal() {
+            const modal = document.getElementById('updateModal');
+            modal.style.opacity = '0';
+            modal.style.transition = 'opacity 0.4s ease';
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 400);
+        }
+
+        // بستن مودال با کلیک روی بیرون
+        document.getElementById('updateModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // بستن با دکمه ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+        let detailsVisible = false;
+
+function toggleDetails() {
+    const details = document.getElementById('detailsContent');
+    const btn = document.querySelector('.btn-secondary');
+    
+    detailsVisible = !detailsVisible;
+    
+    if (detailsVisible) {
+        details.style.display = 'block';
+        btn.classList.add('active');
+        btn.innerHTML = '<i class="fas fa-chevron-up"></i> بستن جزییات';
+    } else {
+        details.style.display = 'none';
+        btn.classList.remove('active');
+        btn.innerHTML = '<i class="fas fa-info-circle"></i> جزئیات بیشتر';
+    }
+}
+    </script>
   </body>
 </html>
